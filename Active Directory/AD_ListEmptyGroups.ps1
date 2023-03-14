@@ -11,3 +11,4 @@ foreach ($group in $groups) {
     Write-Output "$($group.Name) - $($group.DistinguishedName)"
   }
 }
+#s
