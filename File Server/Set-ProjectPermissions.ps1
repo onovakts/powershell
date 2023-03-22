@@ -1,5 +1,5 @@
 ﻿#OU where security groups will be created!
-$ou = "OU=Test,OU=Skupiny,DC=cz,DC=kajimaeurope,DC=com"
+$ou = ""
 
 # Import list of folders
 $subfolders = Import-Csv -Path .\security_groups.csv -Encoding UTF8

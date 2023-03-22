@@ -11,8 +11,8 @@ foreach ($subfolder in $subfolders) {
     $readWriteGroupName = $subfolder.Name + "_RW"
 
     # Create the security groups in Active Directory
-    New-ADGroup -Name $readGroupName -GroupScope Global -GroupCategory Security -Path "OU=Projects,OU=Groups,DC=dsp,DC=lan"
-    New-ADGroup -Name $readWriteGroupName -GroupScope Global -GroupCategory Security -Path "OU=Projects,OU=Groups,DC=dsp,DC=lan"
+    New-ADGroup -Name $readGroupName -GroupScope Global -GroupCategory Security -Path ""
+    New-ADGroup -Name $readWriteGroupName -GroupScope Global -GroupCategory Security -Path ""
 
     # Get the security descriptor for the subfolder
     $acl = Get-Acl $subfolder.FullName
