@@ -3,7 +3,7 @@
 #Install Certificate in Machine Personal store
 #Import-PfxCertificate -Exportable -CertStoreLocation Cert:\LocalMachine\My -FilePath .\pnp.pfx -Confirm
 
-#Set Runtime Parameters  
+#Set Admin Site 
 $AdminSiteURL=
 
 #Global Admin  
